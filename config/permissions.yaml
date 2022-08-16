@@ -1,0 +1,1283 @@
+---
+coverage:
+- group:
+  permission: admin
+  Column5: N
+  Column6: GET
+  path: "/p/admin/backend_apis/new"
+  fart: 403
+  Column13: 403
+  Column14: 403
+  Column16: 403
+  Column17: 403
+- group:
+  permission: admin
+  Column5: N
+  Column6: POST
+  path: "/p/admin/backend_apis"
+  fart: 403
+  Column13: 403
+  Column14: 403
+  Column16: 403
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: GET
+  path: "/p/admin/backend_apis/{backend_id}"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 200
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: GET
+  path: "/p/admin/backend_apis/{backend_id}/edit"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 200
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: PUT
+  path: "/p/admin/backend_apis/{backend_id}"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 302
+  Column17: 403
+- group:
+  permission: admin
+  Column5: N
+  Column6: DELETE
+  path: "/p/admin/backend_apis/{backend_id}"
+  fart: 403
+  Column13: 403
+  Column14: 403
+  Column16: 403
+  Column17: 403
+- group: backend api stats
+  permission: monitoring
+  Column5: N
+  Column6: GET
+  path: "/p/admin/backend_apis/{backend_id}/stats/usage"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group: backend api metrics
+  permission: plans
+  Column5: N
+  Column6: GET
+  path: "/p/admin/backend_apis/{backend_id}/metrics"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 200
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: GET
+  path: "/p/admin/backend_apis/{backend_id}/metrics/new"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 200
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: POST
+  path: "/p/admin/backend_apis/{backend_id}/metrics"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 302
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: GET
+  path: "/p/admin/backend_apis/{backend_id}/metrics/{backend_api_hits_metric_id}/children/new"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 200
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: POST
+  path: "/p/admin/backend_apis/{backend_id}/metrics/{backend_api_hits_metric_id}/children"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 302
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: GET
+  path: "/p/admin/backend_apis/{backend_id}/metrics/{metric_id}/edit"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 200
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: PUT
+  path: "/p/admin/backend_apis/{backend_id}/metrics/{metric_id}"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 302
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: DELETE
+  path: "/p/admin/backend_apis/{backend_id}/metrics/{metric_id}"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 302
+  Column17: 403
+- group: backend api mapping rules
+  permission: plans
+  Column5: N
+  Column6: GET
+  path: "/p/admin/backend_apis/{backend_id}/mapping_rules"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 200
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: GET
+  path: "/p/admin/backend_apis/{backend_id}/mapping_rules/new"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 200
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: POST
+  path: "/p/admin/backend_apis/{backend_id}/mapping_rules"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 302
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: GET
+  path: "/p/admin/backend_apis/{backend_id}/mapping_rules/{mapping_rule_id}/edit"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 200
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: PUT
+  path: "/p/admin/backend_apis/{backend_id}/mapping_rules/{mapping_rule_id}"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 302
+  Column17: 403
+- group:
+  permission: plans
+  Column5: N
+  Column6: DELETE
+  path: "/p/admin/backend_apis/{backend_id}/mapping_rules/{mapping_rule_id}"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 302
+  Column17: 403
+-    service
+group: service
+  permission: admin
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/new"
+  fart: 403
+  Column13: 403
+  Column14: 403
+  Column16: 403
+  Column17: 403
+- group:
+  permission: admin
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/services"
+  fart: 403
+  Column13: 403
+  Column14: 403
+  Column16: 403
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/edit"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/services/{service_id}"
+  fart: 403
+  Column13: 302
+  Column14: 200
+  Column16: 404
+  Column17: 403
+- group:
+  permission: admin
+  Column5: Y
+  Column6: DELETE
+  path: "/apiconfig/services/{service_id}"
+  fart: 403
+  Column13: 403
+  Column14: 403
+  Column16: 404
+  Column17: 403
+- group: service stats
+  permission: monitoring
+  Column5: Y
+  Column6: GET
+  path: "/services/{service_id}/stats/usage"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: monitoring
+  Column5: Y
+  Column6: GET
+  path: "/services/{service_id}/stats/days"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: monitoring
+  Column5: Y
+  Column6: GET
+  path: "/services/{service_id}/stats/usage/hours"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: monitoring
+  Column5: Y
+  Column6: GET
+  path: "/services/{service_id}/stats/usage/top_applications"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: monitoring
+  Column5: Y
+  Column6: GET
+  path: "/services/{service_id}/stats/response_codes"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: monitoring
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/alerts"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: monitoring
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/errors"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: monitoring
+  Column5: Y
+  Column6: DELETE
+  path: "/apiconfig/services/{service_id}/errors"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group: applications
+  permission: partners
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/applications"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: partners
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/applications/{application_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: partners
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/applications/{application_id}/edit"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: partners
+  Column5: Y
+  Column6: GET
+  path: "/buyers/applications/{application_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: partners
+  Column5: Y
+  Column6: DELETE
+  path: "/buyers/applications/{application_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group: application stats
+  permission: monitoring
+  Column5: Y
+  Column6: GET
+  path: "/buyers/stats/applications/{application_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group: application plans
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/application_plans"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/services/{service_id}/application_plans/masterize"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/application_plans/new"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/services/{service_id}/application_plans"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/application_plans/{application_plan_id}/edit"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/application_plans/{application_plan_id}"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/plans/{application_plan_id}/publish"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/plans/{application_plan_id}/hide"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/plan_copies?plan_id={application_plan_id}"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: DELETE
+  path: "/apiconfig/application_plans/{application_plan_id}"
+  fart: 403
+  Column13: 302
+  Column14: 302
+  Column16: 404
+  Column17: 403
+- group: application plan pricing rules
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/application_plans/{application_plan_id}/metrics/{metric_id}/pricing_rules"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/application_plans/{application_plan_id}/metrics/{metric_id}/pricing_rules/new"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/application_plans/{application_plan_id}/metrics/{metric_id}/pricing_rules"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/application_plans/{application_plan_id}/pricing_rules/{pricing_rule_id}/edit"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/application_plans/{application_plan_id}/pricing_rules/{pricing_rule_id}"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: DELETE
+  path: "/apiconfig/application_plans/{application_plan_id}/pricing_rules/{pricing_rule_id}"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group: application plan usage limits
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/application_plans/{application_plan_id}/metrics/{metric_id}/usage_limits"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/application_plans/{application_plan_id}/metrics/{metric_id}/usage_limits/new"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/application_plans/{application_plan_id}/metrics/{metric_id}/usage_limits"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/application_plans/{application_plan_id}/usage_limits/{usage_limit_id}/edit"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/application_plans/{application_plan_id}/usage_limits/{usage_limit_id}"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: DELETE
+  path: "/apiconfig/application_plans/{application_plan_id}/usage_limits/{usage_limit_id}"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group: application plan methods
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/application_plans/{application_plan_id}/metrics/{metric_id}/toggle_enabled"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/application_plans/{application_plan_id}/metrics/{metric_id}/toggle_visible"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/application_plans/{application_plan_id}/metrics/{metric_id}/toggle_limits_only_text"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group: features
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/plans/{application_plan_id}/features/new"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/plans/{application_plan_id}/features"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/plans/{application_plan_id}/features/{feature_id}/edit?type=application_plan"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/plans/{application_plan_id}/features/{feature_id}"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: DELETE
+  path: "/apiconfig/plans/{application_plan_id}/features/{feature_id}?method=delete&type=application_plan"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group: '"featurings" (enable/disable plan features)'
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/plans/{application_plan_id}/featurings?id={feature_id}&type=application_plan"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: DELETE
+  path: "/apiconfig/plans/{application_plan_id}/featurings/{feature_id}?type=application_plan"
+  fart:
+  Column13: 200
+  Column14: 200
+  Column16:
+  Column17:
+- group: service usage rules
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/usage_rules"
+  fart: 403
+  Column13: 200
+  Column14: 200
+  Column16: 404
+  Column17: 403
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/services/{service_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group: service plans
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/service_plans"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/services/{service_id}/service_plans/masterize"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/service_plans/new"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/services/{service_id}/service_plans"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/service_plans/{service_plan_id}/edit"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/service_plans/{service_plan_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/plans/{service_plan_id}/hide"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/plan_copies?plan_id={service_plan_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: DELETE
+  path: "/apiconfig/service_plans/{service_plan_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group: service contracts (subscriptions)
+  permission: partners
+  Column5: Y
+  Column6: GET
+  path: "/buyers/service_contracts?search[service_id]={service_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: partners
+  Column5: Y
+  Column6: GET
+  path: "/buyers/accounts/{buyer_account_id}/service_contracts/new?service_id={service_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: partners
+  Column5: Y
+  Column6: POST
+  path: "/buyers/accounts/{buyer_account_id}/service_contracts?service_id={service_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: partners
+  Column5: Y
+  Column6: GET
+  path: "/buyers/accounts/{buyer_account_id}/service_contracts/{service_contract_id}/edit"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: partners
+  Column5: Y
+  Column6: PUT
+  path: "/buyers/accounts/{buyer_account_id}/service_contracts/{service_contract_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: partners
+  Column5: Y
+  Column6: PUT
+  path: "/buyers/accounts/{buyer_account_id}/service_contracts/{service_contract_id}/approve"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: partners
+  Column5: Y
+  Column6: DELETE
+  path: "/buyers/accounts/{buyer_account_id}/service_contracts/{service_contract_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group: service api doc specs
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/api_docs"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/api_docs/new"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/services/{service_id}/api_docs"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/api_docs/{api_docs_service_id}/preview"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/api_docs/{api_docs_service_id}/edit"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/services/{service_id}/api_docs/{api_docs_service_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/admin/api_docs/services/{api_docs_service_id}/toggle_visible"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: DELETE
+  path: "/admin/api_docs/services/{api_docs_service_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group: service integration config & settings
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/integration"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PATCH
+  path: "/apiconfig/services/{service_id}/integration"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PATCH
+  path: "/apiconfig/services/{service_id}/integration/promote_to_production#production"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/settings"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/services/{service_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group: service proxy configs
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/proxy_configs"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/proxy_configs/{proxy_config_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group: service metrics
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/metrics"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/metrics/new"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/services/{service_id}/metrics"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/metrics/{hits_metric_id}/children/new"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/services/{service_id}/metrics/{hits_metric_id}/children"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/metrics/{metric_id}/edit"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/services/{service_id}/metrics/{metric_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: DELETE
+  path: "/apiconfig/services/{service_id}/metrics/{metric_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group: service mapping rules
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/proxy_rules"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/proxy_rules/new"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/services/{service_id}/proxy_rules"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/proxy_rules/{proxy_rule_id}/edit"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/services/{service_id}/proxy_rules/{proxy_rule_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: DELETE
+  path: "/apiconfig/services/{service_id}/proxy_rules/{proxy_rule_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group: service policy chain
+  permission: policy_registry
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/policies/edit"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: policy_registry
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/services/{service_id}/policies"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group: service backend usages
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/backend_usages"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/backend_usages/new"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: POST
+  path: "/apiconfig/services/{service_id}/backend_usages"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: GET
+  path: "/apiconfig/services/{service_id}/backend_usages/{backend_usage_id}/edit"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: PUT
+  path: "/apiconfig/services/{service_id}/backend_usages/{backend_usage_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:
+- group:
+  permission: plans
+  Column5: Y
+  Column6: DELETE
+  path: "/apiconfig/services/{service_id}/backend_usages/{backend_usage_id}"
+  fart:
+  Column13:
+  Column14:
+  Column16:
+  Column17:

@@ -16,9 +16,9 @@ class Scopes(enum.Enum):
     BILLING = 'user_member_permission_ids_finance'
     DEV_PORTAL = 'user_member_permission_ids_portal'
     SETTINGS = 'user_member_permission_ids_settings'
-    ACCOUNT_APPLICATION = 'user_member_permission_ids_partners'
-    ANALYTICS = 'user_member_permission_ids_monitoring'
-    APP_PLANS = 'user_member_permission_ids_plans'
+    ACCOUNT_APPLICATION = 'user_member_permission_ids_partners'  # products to select
+    ANALYTICS = 'user_member_permission_ids_monitoring'  # products to select
+    APP_PLANS = 'user_member_permission_ids_plans'  # products to select
     POLICY = 'user_member_permission_ids_policy_registry'
 
 
@@ -117,6 +117,9 @@ class UserDetailView(BaseSettingsView):
         """
         for prod_id in product_ids:
             self.access_list.uncheck([f"user_member_permission_service_ids_{prod_id}"])
+
+    def update(self):
+        self.update_btn.click()
 
     def prerequisite(self):
         return UsersView

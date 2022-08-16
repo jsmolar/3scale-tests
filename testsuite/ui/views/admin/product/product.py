@@ -1,17 +1,19 @@
 """View representations of Product pages"""
 from widgetastic.widget import TextInput, Text
 
+from testsuite.ui import permissions
 from testsuite.ui.navigation import step
 from testsuite.ui.views.admin.foundation import BaseAdminView
 from testsuite.ui.views.admin.product import BaseProductView, ProductsView
 from testsuite.ui.widgets.buttons import ThreescaleCreateButton, ThreescaleUpdateButton, ThreescaleDeleteButton
 
 
+@permissions.dev_portal()
 class ProductNewView(BaseAdminView):
     """View representation of New Product page"""
     path_pattern = "/apiconfig/services/new"
     name = TextInput(id="service_name")
-    system_name = TextInput(id="service_system_name")
+    system_name = permissions.admin()(TextInput(id="service_system_name"))
     description = TextInput(id="service_description")
     create_button = ThreescaleCreateButton()
 

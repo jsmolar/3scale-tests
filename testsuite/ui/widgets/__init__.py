@@ -20,26 +20,26 @@ class RadioGroup(GenericLocatorWidget):
     """
     Radio group of 3scale pages.
     """
-    OPTIONS_SECTION_CLASS = '//fieldset/ol[contains(@class, "{}")]'
-    OPTIONS_SECTION = '/fieldset/ol'
+    OPTIONS_SECTION_CLASS = './fieldset/ol[contains(@class, "{}")]'
+    OPTIONS_SECTION = './fieldset/ol'
 
     OPTIONS = './li'
     OPTIONS_INPUT = OPTIONS + '/label/input'
     OPTIONS_BY_ID = OPTIONS_INPUT + '[@id="{}"]'
 
-    def __init__(self, parent=None, locator=None, field_set_identifier="", logger=None):
+    def __init__(self, parent=None, locator=None, field_set_name_identifier="", logger=None):
         super().__init__(parent, locator, logger)
-        if field_set_identifier:
-            self.locator = locator + self.OPTIONS_SECTION_CLASS.format(field_set_identifier)
+        if field_set_name_identifier:
+            self.options_section = self.browser.element(self.OPTIONS_SECTION_CLASS.format(field_set_name_identifier))
         else:
-            self.locator = locator + self.OPTIONS_SECTION
+            self.options_section = self.browser.element(self.OPTIONS_SECTION)
 
     def select(self, option: str):
         """
         Select radio element from the list.
         :param option: String id-s of options
         """
-        element = self.browser.element(self.OPTIONS_BY_ID.format(option))
+        element = self.browser.element(self.OPTIONS_BY_ID.format(option), parent=self.options_section)
         element.click()
 
 
@@ -64,9 +64,17 @@ class CheckBoxGroup(GenericLocatorWidget):
     def __init__(self, parent=None, locator=None, ol_identifier=None, logger=None):
         super().__init__(parent, locator, logger)
         if ol_identifier:
+            self.options_section = self.browser.element(self.OPTIONS_SECTION_OL_CLASS.format(ol_identifier))
             self.locator = locator + self.OPTIONS_SECTION_OL_CLASS.format(ol_identifier)
+<<<<<<< Updated upstream
+=======
+        elif field_set_identifier:
+            self.options_section = self.browser.element(self.OPTIONS_SECTION_FIELDSET_NAME.format(field_set_identifier))
+            self.locator = locator + self.OPTIONS_SECTION_FIELDSET_NAME.format(field_set_identifier)
+>>>>>>> Stashed changes
         else:
             self.locator = locator + self.OPTIONS_SECTION
+            # self.options_section = self.browser.element(self.OPTIONS_SECTION)
 
     def is_checked(self, option: str):
         """Detect if checkbox is already checked"""
